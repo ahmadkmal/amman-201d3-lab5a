@@ -74,7 +74,7 @@ function sumArray(sumArr) { //eslint-disable-line
     var sum1 = 0;
     // var arr = '';
     for(var a = 0 ;a< sumArr.length ; a++){
-        sum1 = sum1 + sumArr[a];
+        sum1 = sum(sum1,sumArr[a])[0];
         // arr = arr + sumArr[a];
     }
 
