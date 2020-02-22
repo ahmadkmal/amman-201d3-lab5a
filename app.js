@@ -104,7 +104,7 @@ Test this function by hand in the console to get it working, and when you think 
 function multiplyArray(multArr) { //eslint-disable-line
     var mul1 = 1;
     for(var a = 0 ;a< multArr.length ; a++){
-        mul1 = mul1 * multArr[a];
+        mul1 = multiply(mul1,multArr[a])[0];
        
     }
     return([mul1,`The numbers ${multArr} have a product of ${mul1}.`])
@@ -138,7 +138,7 @@ var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     var mul1 = 1;
     for(var a = 0 ;a< dynamicArray.length ; a++){
-        mul1 = mul1 * dynamicArray[a];
+        mul1 =multiply(mul1,dynamicArray[a])[0];
        
     }
     return([mul1,`The numbers ${dynamicArray} have a product of ${mul1}.`])
